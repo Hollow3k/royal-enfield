@@ -5,4 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Figtree', sans-serif;
+  overflow-x: hidden;
+  scrollbar-color: black rgb(53, 53, 53);
 }
