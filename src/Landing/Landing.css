@@ -11,3 +11,132 @@
     height: 100%;
     z-index: -1;
 }
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    z-index: 100;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(to bottom, #ffffff, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo img{
+    width: 10rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+    background: linear-gradient(to bottom, #ffffff, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links li a:hover {
+    opacity: 0.7;
+}
+
+/* Hero Content */
+.hero-content {
+    position: fixed;
+    right: 5rem;
+    bottom: 15rem;
+    text-align: right;
+    color: #fff;
+    z-index: 10;
+    max-width: 900px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #ffffff, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    background: linear-gradient(to bottom, #ffffff, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    .hero-content {
+        right: 2rem;
+        bottom: 10rem;
+        max-width: 90%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
